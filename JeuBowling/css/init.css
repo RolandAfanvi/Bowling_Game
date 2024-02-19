@@ -1,0 +1,120 @@
+.expo{
+ vertical-align:super;
+}
+
+body {
+ background-color:#AAAAAA;
+/*margin: 0.5;
+    overflow: hidden;*/
+}
+
+#webgl{
+ border:solid 2px red;
+ /*margin-left: 0.5cm;
+ width:95%;
+ height:95%;*/
+ background-color:white;
+}
+
+#TableauCamera{
+ text-align:center;
+ border : solid white 2px;
+ //background-color:green;
+ border-collapse:collapse;
+ color: white;
+ position: center;
+}
+/*
+#TableauCamera td, #TableauCamera th{
+ 
+ border : solid red 2px;
+ 
+}*/
+
+#l1{border-collapse: collapse;
+    border: solid white 2px;}
+
+.rouge{
+    color: red;
+    border: solid blue 2px;
+    width:3cm ;
+    height: 1cm;
+}
+
+.bleu{
+    color: blue;
+    border: solid red 2px;
+    width:3cm ;
+    height: 1cm;
+}
+/*
+input[type='text']{
+ width:2cm;
+ //background-color:yellow;
+ //color:blue;
+ text-align: center;
+}*/
+input[type='text']{
+ margin-left:0cm;
+ margin-top:0cm;
+ width:5cm;
+ background-color:#99FF99;
+ color:red;
+ text-align: center;
+
+}
+#Bleu{color: blue;}
+#Rouge{color: red;}
+
+
+
+#divBouton{
+ float:right;
+}
+#controleRepere{
+ float:left;
+ margin-right:1cm;
+ border : solid 3px #FFFF00;
+}
+fieldset{
+ color : white;
+ background-color:white;
+ background-image: url("../image/image_fond.jpg");
+ font-weight:900;
+}
+
+
+#boutonRouge{background-color: red;
+    position: left;
+    margin-right: 0,2cm;
+    transform: translate(50%);
+
+}
+#boutonBleu{background-color: blue;
+    position: right ;
+
+
+}
+
+#texte{
+    animation: 10s infinite alternate slidein;
+}
+
+/*#bloc:hover h1{
+    left: 100%;
+    transform: translateX(-100%);
+}*/
+@keyframes slidein {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}
+
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+
+<head>
+    <meta  charset="utf-8">
+    <meta name="author" content="afanvi kodjo roland  et meillier leo, Université de Bourgogne">
+    <meta name="copyright" content="afanvi kodjo roland et meillier leo">
+    <title>JEU DU BOWLING</title>
+    <script type="text/javascript" charset="UTF-8" src="../../libs/three/three.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="../../libs/other/ThreeBSP.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="../../libs/three/controls/TrackballControls.js"></script>
+    <script type="text/javascript" src="../../libs/util/dat.gui.js"></script>
+    <script type="text/javascript" src="../../libs/util/Stats.js"></script>
+    <script type="text/javascript" src="../../libs/util/util.js"></script>
+     <script type="text/javascript" src="../js/GeometrieUtile.js"></script>
+     <script type="text/javascript" src="../js/Quille.js"></script>
+     <script type="text/javascript" src="../js/Balle.js"></script>
+     <script type="text/javascript" src="../js/collision.js"></script>
+     <script type="text/javascript" src="../js/ModeleMateriaux.js"></script>
+     <script type="text/javascript" src="../js/Bezier.js"></script>
+    <script type="text/javascript" src="../js/CameraLumiere.js"></script>
+    <script type="text/javascript" src="../js/init.js"></script>
+    <link rel="stylesheet" href="../css/init.css">
+</head>
+
+
+<body onload="init()">
+    <div id="webgl"></div>
+    
+      
+      <input type="button" id="boutonBleu" name="boutonBleu" value="Jouer" onclick="BlueGame();">
+      <input type="button" id="boutonRouge" name="boutonRouge" value="Jouer" onclick="RedGame();">
+      
+    
+    <form id="controle" action="mailto:toto@wanadoo.fr" method="post">
+      <fieldset>
+        <legend></legend><br/>        
+        <div  id="texte">!!!!WELCOME!!!! &nbsp; &nbsp; !!!!BIENVENUE!!!! &nbsp; &nbsp; !!!WILLKOMMEN!!!</div><br/><br/>
+        <div>
+          <table id="TableauCamera">
+          <tr>
+            <th id="l1">EQUIPE</th>
+    
+            <th id="l1" >SCORE </th>
+
+          </tr>
+          <tr>
+            <th class="rouge">EQUIPE ROUGE</th>
+            <td  class="rouge" ><input type="text" placeholder="0" id="Rouge" disabled="disabled"></td>
+            
+          </tr>
+          <tr>
+            <th class="bleu">EQUIPE BLEUE</th>
+            <td class="bleu"   ><input type="text" id="Bleu" placeholder="0" disabled="disabled"></td>
+            
+          </tr>
+          </table>          
+        </div>
+      </fieldset>
+    </form>
+    <p id="result"></p>
+</body>
+
+</html>
